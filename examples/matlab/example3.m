@@ -38,7 +38,8 @@
     plot(out.z,':','LineWidth',2);hold off;axis off;
     pbaspect([3 1 1])
     lgd = legend('true','Mumford-Shah','TV','Location','southoutside','Orientation','horizontal');
-    lgd.FontSize = 20;
+    lgd.FontSize = 30;
+    lgd.EdgeColor = 'w';
     saveas(gcf,'1dex','epsc')
     saveas(gcf,'1dex','fig')
     save('data.mat','out');
