@@ -31,9 +31,10 @@
     %% 
     
     rid = 230;
-    out.x = in_image(rid,:);
-    out.y = out_image(rid,:);
-    out.z = out_image2(rid,:);
+    cid = 100;
+    out.x = in_image(rid,cid:end);
+    out.y = out_image(rid,cid:end);
+    out.z = out_image2(rid,cid:end);
     figure();plot(out.x,'Color',[0.66 0.66 0.66]);hold on;plot(out.y,'LineWidth',2);
     plot(out.z,':','LineWidth',2);hold off;axis off;
     pbaspect([3 1 1])
