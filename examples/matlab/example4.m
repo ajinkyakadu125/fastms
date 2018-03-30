@@ -20,7 +20,7 @@
 function example3()
     in_image = imread('../../images/hepburn.png');
 
-    out_image = fastms(in_image, 'engine', 1, 'alpha', 100000, 'stop_eps', 1e-8, 'use_double', true, 'iterations', 100000);
+    out_image = fastms(in_image, 'engine', 0, 'alpha', 100000, 'stop_eps', 1e-8, 'use_double', true, 'iterations', 100000);
     
     show_images(in_image, out_image);    
 end

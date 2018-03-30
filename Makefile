@@ -19,9 +19,9 @@
 
 all: targets
 
-USE_CUDA:=1
+USE_CUDA:=0
 USE_OPENMP:=1
-USE_OPENCV:=1
+USE_OPENCV:=0
 USE_MEX:=1
 
 TMP_DIR:=tmp
@@ -156,7 +156,7 @@ ifeq ($(USE_MEX), 1)
     ifeq ($(MAC), 1)
     	MATLAB_DIR:=/Applications/MATLAB_R2014a.app
     else
-    	MATLAB_DIR:=/usr/local/lehrstuhl/DIR/matlab-R2013b
+    	MATLAB_DIR:=/usr/local/MATLAB/R2016b
     endif
     ifeq ($(wildcard $(MATLAB_DIR)/bin/mex),)
         $(info WARNING: Did not find MATLAB in the specified directory $(MATLAB_DIR), disabling mex target compilation.)

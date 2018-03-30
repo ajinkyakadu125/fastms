@@ -20,7 +20,7 @@
 function example3()
     in_image = imread('../../images/squirrel.png');
 
-    out_image = fastms(in_image, 'engine', 1, 'lambda', 0.5, 'alpha', -1);
+    out_image = fastms(in_image, 'engine', 0, 'lambda', 0.5, 'alpha', -1);
 
     show_images(in_image, out_image);    
 end

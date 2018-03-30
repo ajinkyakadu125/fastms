@@ -17,10 +17,10 @@
 % along with fastms. If not, see <http://www.gnu.org/licenses/>.
 % 
 
-function example1()
-    in_image = imread('../../images/hepburn.png');
+function [out_image] = example1(m)
+    in_image = m; % imread('/home/ajinkya/gitlab-uu/WAVEFORM/models/bg_model.png');
 
-    out_image = fastms(in_image);
+    out_image = fastms(in_image, 'weight', true, 'lambda', 3, 'alpha', 100);
     
     show_images(in_image, out_image);    
 end

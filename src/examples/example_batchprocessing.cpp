@@ -27,7 +27,7 @@
 #include <iostream>
 #include <vector>
 #include "util.h"
-
+#include <algorithm>
 
 
 int example_batchprocessing(int argc, char **argv)
