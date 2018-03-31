@@ -39,7 +39,7 @@
     figure(1);plot(out.x,'Color',[0.66 0.66 0.66],'LineWidth',1.5);hold on;plot(out.y,'LineWidth',3);
     plot(out.z,':','LineWidth',3);hold off;axis off;
     pbaspect([3 1 1])
-    lgd = legend('True','Mumford-Shah','TV','Location','southoutside','Orientation','horizontal');
+    lgd = legend('True','Mumford-Shah','TV','Location','northwest','Orientation','horizontal');
     lgd.FontSize = 25;
     lgd.EdgeColor = 'w';
     saveas(gcf,'1dex','epsc')
